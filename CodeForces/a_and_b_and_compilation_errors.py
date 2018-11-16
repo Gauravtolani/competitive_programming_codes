@@ -8,11 +8,14 @@ errors_list_2 = input().split()
 
 def list_difference(a, b):
     count = defaultdict(int)
+
     for x in a:
         count[x] += 1
 
     for x in b:
         count[x] -= 1
+
+    print(count)
 
     diff = []
     for x in a:
